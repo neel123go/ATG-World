@@ -1,8 +1,9 @@
+import Header from "./components/Navbar/Navbar";
 function App() {
   return (
-    <div>
-      <h2>Hello</h2>
-    </div>
+    <>
+      <Header />
+    </>
   );
 }
 
