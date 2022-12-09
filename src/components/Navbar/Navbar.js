@@ -28,7 +28,7 @@ const Header = () => {
                         />
                     </Form>
                 </Navbar.Collapse>
-                <h5 style={{ color: '#2E2E2E', fontSize: '16px' }}>Create account.<span style={{ color: '#2F6CE5' }}>It's free!</span> <IoMdArrowDropdown fontSize={20} /></h5>
+                <h5 style={{ color: '#2E2E2E', fontSize: '16px', cursor: 'pointer' }} data-bs-toggle="modal" data-bs-target="#staticBackdrop">Create account.<span style={{ color: '#2F6CE5' }}>It's free!</span> <IoMdArrowDropdown fontSize={20} /></h5>
             </Container>
 
             <Container fluid className={containerSmSty}>

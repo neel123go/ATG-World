@@ -10,9 +10,21 @@
     border-bottom: 2px solid rgb(52, 52, 52) !important;
 }
 
-.button {
+.buttonStyle {
     width: 133px;
     height: 36px;
     border-radius: 4px;
     border: none;
+}
+
+.inputStyle {
+    border-color: #B8B8B8 !important;
+}
+
+.inputStyle:focus {
+    outline: none;
+}
+
+.dropdown-menu {
+    margin-left: -135px !important;
 }
