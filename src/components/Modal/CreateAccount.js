@@ -81,7 +81,7 @@ const JoinGroupModal = ({ user, setUser }) => {
                 </div>
             </div>
 
-            <SignIn />
+            <SignIn user={user} setUser={setUser} />
         </>
     );
 };

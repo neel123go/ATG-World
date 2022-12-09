@@ -1,10 +1,31 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import { FaFacebook } from 'react-icons/fa';
 import { FcGoogle } from 'react-icons/fc';
 import { RxCross2 } from 'react-icons/rx';
 import AccountImage from '../../Images/create-account-image.png';
 
-const SignIn = () => {
+const SignIn = ({ user, setUser }) => {
+    const [error, setError] = useState('');
+    const emailRef = useRef('');
+    const passwordRef = useRef('');
+
+    const handleLogin = async (e) => {
+        e.preventDefault();
+        const email = emailRef.current.value;
+        const password = passwordRef.current.value;
+
+        if (user?.email === email && user?.password === password) {
+            await setUser({
+                firstName: user?.firstName,
+                lastName: user?.lastName,
+                email,
+                password
+            });
+        } else {
+            setError("Password and Email doesn't match");
+        }
+    }
+
     return (
         <div className="modal fade" id="staticBackdropSignIn" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabelSignIn" aria-hidden="true" >
             <div className="modal-dialog modal-lg modal-dialog-centered mx-auto" style={{ width: '45%' }}>
@@ -22,12 +43,13 @@ const SignIn = () => {
 
                         <div className='d-flex gap-4 justify-content-between align-items-center'>
                             <div style={{ width: '100%' }}>
-                                <form>
+                                <form onSubmit={handleLogin}>
+                                    <p className='text-danger'>{error}</p>
                                     <div className="mb-3">
-                                        <input type="email" className="form-control rounded-0" placeholder='Email' aria-describedby="emailHelp" />
+                                        <input type="email" className="form-control rounded-0" placeholder='Email' ref={emailRef} aria-describedby="emailHelp" required />
 
                                         <div className="mb-3">
-                                            <input type="password" className="form-control rounded-0" placeholder='Password' />
+                                            <input type="password" className="form-control rounded-0" placeholder='Password' ref={passwordRef} required />
                                         </div>
                                     </div>
                                     <button type="submit" className="text-light rounded-pill mb-2 border-0 py-2" style={{ backgroundColor: '#2F6CE5', width: '100%' }}>Sign In</button>
