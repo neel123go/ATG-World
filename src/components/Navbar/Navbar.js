@@ -9,7 +9,7 @@ import { BsFillCircleFill, BsTriangleFill } from 'react-icons/bs';
 import Logo from '../../Images/logo.png';
 import { navbarSty, containerLgSty, containerSmSty, searchInput } from './NavbarStyle';
 
-const Header = () => {
+const Header = ({ user }) => {
     return (
         <Navbar expand="lg" className={navbarSty}>
             <Container fluid className={containerLgSty}>
@@ -28,7 +28,7 @@ const Header = () => {
                         />
                     </Form>
                 </Navbar.Collapse>
-                <h5 style={{ color: '#2E2E2E', fontSize: '16px', cursor: 'pointer' }} data-bs-toggle="modal" data-bs-target="#staticBackdrop">Create account.<span style={{ color: '#2F6CE5' }}>It's free!</span> <IoMdArrowDropdown fontSize={20} /></h5>
+                {user === '' ? <h5 style={{ color: '#2E2E2E', fontSize: '16px', cursor: 'pointer' }} data-bs-toggle="modal" data-bs-target="#staticBackdrop">Create account.<span style={{ color: '#2F6CE5' }}>It's free!</span> <IoMdArrowDropdown fontSize={20} /></h5> : <h5 style={{ color: '#2E2E2E', fontSize: '16px' }}><img src="https://i.ibb.co/pdq3qC4/Rectangle-3.png" style={{ width: '35px', marginRight: '3px' }} alt="" /> {`${user?.firstName} ${user?.lastName}`}<IoMdArrowDropdown fontSize={20} className="ms-2" /></h5>}
             </Container>
 
             <Container fluid className={containerSmSty}>

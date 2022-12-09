@@ -17,12 +17,12 @@ const Post = () => {
                     <h5 style={{ fontSize: '18px' }}>✍️ Article</h5>
                     <div className='d-flex justify-content-between my-3'>
                         <h4 style={{ fontSize: '22px', width: '80%' }}>What if famous brands had regular fonts? Meet RegulaBrands!</h4>
-                        <div class="dropdown">
+                        <div className="dropdown">
                             <FiMoreHorizontal style={{ cursor: 'pointer' }} fontSize={25} id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" />
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                <li><a class="dropdown-item" href="#">Edit</a></li>
-                                <li><a class="dropdown-item" href="#">Report</a></li>
-                                <li><a class="dropdown-item" href="#">Delete</a></li>
+                            <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a className="dropdown-item" href="#">Edit</a></li>
+                                <li><a className="dropdown-item" href="#">Report</a></li>
+                                <li><a className="dropdown-item" href="#">Delete</a></li>
                             </ul>
                         </div>
                     </div>
@@ -54,12 +54,12 @@ const Post = () => {
                     <h5 style={{ fontSize: '18px' }}>🔬️ Education</h5>
                     <div className='d-flex justify-content-between my-3'>
                         <h4 style={{ fontSize: '22px', width: '80%' }}>Tax Benefits for Investment under National Pension Scheme launched by Government</h4>
-                        <div class="dropdown">
+                        <div className="dropdown">
                             <FiMoreHorizontal style={{ cursor: 'pointer' }} fontSize={25} id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" />
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                <li><a class="dropdown-item" href="#">Edit</a></li>
-                                <li><a class="dropdown-item" href="#">Report</a></li>
-                                <li><a class="dropdown-item" href="#">Delete</a></li>
+                            <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a className="dropdown-item" href="#">Edit</a></li>
+                                <li><a className="dropdown-item" href="#">Report</a></li>
+                                <li><a className="dropdown-item" href="#">Delete</a></li>
                             </ul>
                         </div>
                     </div>
@@ -91,12 +91,12 @@ const Post = () => {
                     <h5 style={{ fontSize: '18px' }}>🗓️ Meetup</h5>
                     <div className='d-flex justify-content-between my-3'>
                         <h4 style={{ fontSize: '22px', width: '80%' }}>Finance & Investment Elite Social Mixer @Lujiazui</h4>
-                        <div class="dropdown">
+                        <div className="dropdown">
                             <FiMoreHorizontal style={{ cursor: 'pointer' }} fontSize={25} id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" />
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                <li><a class="dropdown-item" href="#">Edit</a></li>
-                                <li><a class="dropdown-item" href="#">Report</a></li>
-                                <li><a class="dropdown-item" href="#">Delete</a></li>
+                            <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a className="dropdown-item" href="#">Edit</a></li>
+                                <li><a className="dropdown-item" href="#">Report</a></li>
+                                <li><a className="dropdown-item" href="#">Delete</a></li>
                             </ul>
                         </div>
                     </div>
@@ -140,12 +140,12 @@ const Post = () => {
                     <h5 style={{ fontSize: '18px' }}>💼️ Job</h5>
                     <div className='d-flex justify-content-between my-3'>
                         <h4 style={{ fontSize: '22px', width: '80%' }}>FSoftware Developer</h4>
-                        <div class="dropdown">
+                        <div className="dropdown">
                             <FiMoreHorizontal style={{ cursor: 'pointer' }} fontSize={25} id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" />
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                <li><a class="dropdown-item" href="#">Edit</a></li>
-                                <li><a class="dropdown-item" href="#">Report</a></li>
-                                <li><a class="dropdown-item" href="#">Delete</a></li>
+                            <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a className="dropdown-item" href="#">Edit</a></li>
+                                <li><a className="dropdown-item" href="#">Report</a></li>
+                                <li><a className="dropdown-item" href="#">Delete</a></li>
                             </ul>
                         </div>
                     </div>

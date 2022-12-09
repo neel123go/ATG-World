@@ -6,7 +6,7 @@ import { postsContainer, tabLink } from './FeedStyle';
 import Post from '../Post/Post';
 import CreateAccount from '../Modal/CreateAccount';
 
-const Feed = () => {
+const Feed = ({ user, setUser }) => {
     const [activeItem, setActiveItem] = useState(0);
 
     return (
@@ -30,7 +30,7 @@ const Feed = () => {
 
                 <div className='d-flex gap-3 ms-auto'>
                     <button className='buttonStyle'>Write a post <AiFillCaretDown fontSize={12} /></button>
-                    <button type="button" style={{ backgroundColor: '#2F6CE5' }} className="buttonStyle text-light" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><MdGroupAdd className='me-1' fontSize={22} />Join Group</button>
+                    {user === '' ? <button type="button" style={{ backgroundColor: '#2F6CE5' }} className="buttonStyle text-light" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><MdGroupAdd className='me-1' fontSize={22} />Join Group</button> : <button type="button" style={{ backgroundColor: '#fff', border: '1px solid #6A6A6B', color: '#6A6A6B' }} className="buttonStyle"><MdGroupAdd className='me-1' fontSize={22} />Leave Group</button>}
                 </div>
             </ul>
 
@@ -42,16 +42,16 @@ const Feed = () => {
                 <Post />
 
                 <div style={{ width: '40%' }}>
-                    <div class="input-group mb-3 d-flex justify-content-end align-items-center">
+                    <div className="input-group mb-3 d-flex justify-content-end align-items-center">
                         <MdOutlineLocationOn fontSize={20} style={{ marginRight: '-17px', zIndex: '10' }} />
-                        <input type="text" className="border-bottom inputStyle px-4 text-dark border-0 rounded-0 py-2" value="Noida, India" />
+                        <input type="text" className="border-bottom inputStyle px-4 text-dark border-0 rounded-0 py-2" defaultValue="Noida, India" />
                         <MdEdit fontSize={20} style={{ marginLeft: '-17px', zIndex: '10' }} />
                     </div>
                 </div>
             </div>
 
             {/* <!-- Modal --> */}
-            <CreateAccount />
+            <CreateAccount user={user} setUser={setUser} />
         </div>
     );
 };
