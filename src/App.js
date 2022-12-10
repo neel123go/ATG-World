@@ -5,11 +5,11 @@ import Header from "./components/Navbar/Navbar";
 function App() {
   const [user, setUser] = useState('');
   return (
-    <>
+    <div>
       <Header user={user} />
       <Banner user={user} setUser={setUser} />
       <Feed user={user} setUser={setUser} />
-    </>
+    </div>
   );
 }
 

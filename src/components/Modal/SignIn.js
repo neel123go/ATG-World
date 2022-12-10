@@ -57,10 +57,10 @@ const SignIn = ({ user, setUser }) => {
 
                                     <div className='d-md-grid gap-2 d-flex'>
                                         <button type="submit" className="text-light rounded-pill my-md-2 my-4 border-0 py-2 px-md-0 px-5" style={{ backgroundColor: '#2F6CE5' }}>Sign In</button>
-                                        <p data-bs-target="#staticBackdrop" data-bs-toggle="modal" data-bs-dismiss="modal" style={{ color: '#495057', cursor: 'pointer', fontWeight: '600' }} className='mt-2 d-md-none d-block end-0 position-absolute me-4'>or, Create Account</p>
+                                        <p data-bs-target="#staticBackdrop" data-bs-toggle="modal" data-bs-dismiss="modal" style={{ color: '#495057', cursor: 'pointer', fontWeight: '600' }} className='my-md-2 my-4 d-md-none d-block end-0 position-absolute me-4'>or, Create Account</p>
                                     </div>
 
-                                    <button type="button" className="text-dark bg-transparent rounded-3 my-2 py-2" style={{ width: '100%', border: '0.6px solid #D9D9DB', fontSize: '14px', fontWeight: '600' }}><FaFacebook style={{ marginRight: '10px' }} fontSize={20} fill="#1877F2" /> Sign up with Facebook</button>
+                                    <button type="button" className="text-dark bg-transparent rounded-3 my-3 py-2" style={{ width: '100%', border: '0.6px solid #D9D9DB', fontSize: '14px', fontWeight: '600' }}><FaFacebook style={{ marginRight: '10px' }} fontSize={20} fill="#1877F2" /> Sign up with Facebook</button>
                                     <button type="button" className="text-dark bg-transparent rounded-3 my-2 py-2" style={{ width: '100%', border: '0.6px solid #D9D9DB', fontSize: '14px', fontWeight: '600' }}><FcGoogle style={{ marginRight: '10px' }} fontSize={20} /> Sign up with Google</button>
                                     <p className='text-center mt-2' style={{ fontWeight: '600', fontSize: '14px' }}>Forgot Password?</p>
                                 </form>

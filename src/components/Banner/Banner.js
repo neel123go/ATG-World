@@ -20,7 +20,7 @@ const Banner = ({ user, setUser }) => {
             </div>
 
             {/* Banner for Small Device */}
-            <div className={smContainer} style={{ width: '103%', background: 'black', overflow: 'hidden' }}>
+            <div className={smContainer} style={{ width: '100%', background: 'black', overflow: 'hidden' }}>
                 <img src={BannerImg} alt="Five developers at work." style={{ width: '100%', objectFit: 'cover', opacity: 0.4 }} />
                 <div className={contentContainer} style={{ width: '100%', height: '100%' }}>
                     <div className={firstContent}>

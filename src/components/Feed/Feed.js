@@ -16,7 +16,7 @@ const Feed = ({ user, setUser }) => {
     const [follow4, setFollow4] = useState(false);
 
     return (
-        <div className='py-md-5 py-4 container-lg px-0 px-lg-4'>
+        <div className='py-md-5 py-4 container-lg px-0 px-lg-4 overflow-hidden'>
             <ul className="px-4 nav d-lg-none d-flex align-items-center justify-content-between">
                 <li>
                     <h4 className='fw-bolder mt-2'>Posts(364)</h4>
