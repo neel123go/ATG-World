@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Feed.css';
 import { AiFillCaretDown } from 'react-icons/ai';
-import { MdGroupAdd, MdOutlineLocationOn, MdEdit } from 'react-icons/md';
+import { MdGroupAdd, MdOutlineLocationOn, MdEdit, MdOutlineModeEditOutline } from 'react-icons/md';
 import { TbAlertCircle } from 'react-icons/tb';
 import { BiLike } from 'react-icons/bi';
 import { postsContainer, tabLink } from './FeedStyle';
@@ -119,8 +119,10 @@ const Feed = ({ user, setUser }) => {
                         </div>
                     </div>
                 </div>
+            </div>
 
-
+            <div className='rounded-circle d-flex justify-content-center align-items-center d-md-none position-fixed' style={{ background: 'linear-gradient(180deg, #FF5C5C 0%, #F0568A 100%)', width: '55px', height: '55px', right: '18px', bottom: '18px' }}>
+                <MdOutlineModeEditOutline fill="#fff" fontSize={30} />
             </div>
 
             {/* <!-- Modal --> */}

@@ -4,7 +4,6 @@ import { FaFacebook } from 'react-icons/fa';
 import { FcGoogle } from 'react-icons/fc';
 import AccountImage from '../../Images/create-account-image.png';
 import SignIn from './SignIn';
-import './Modal.css';
 
 const JoinGroupModal = ({ user, setUser }) => {
     const [error, setError] = useState('');
