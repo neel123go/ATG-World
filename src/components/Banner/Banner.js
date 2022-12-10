@@ -2,8 +2,9 @@ import React from 'react';
 import BannerImg from '../../Images/banner-mobile.png';
 import { FiArrowLeft } from 'react-icons/fi';
 import { btnStyle, contentContainer, firstContent, lgContainer, smContainer } from './BannerStyle';
+import { MdGroupAdd } from 'react-icons/md';
 
-const Banner = () => {
+const Banner = ({ user, setUser }) => {
     return (
         <>
             {/* Banner for Large Device */}
@@ -25,7 +26,10 @@ const Banner = () => {
                 <div className={contentContainer} style={{ width: '100%', height: '100%' }}>
                     <div className={firstContent}>
                         <FiArrowLeft fontSize={30} />
-                        <button className={btnStyle} style={{ fontWeight: '500' }}>Join Group</button>
+
+                        {user === '' ? <button type="button" style={{ fontWeight: '500' }} className={btnStyle} data-bs-toggle="modal" data-bs-target="#staticBackdrop">Join Group</button> : <button type="button" style={{ fontWeight: '500' }} className={btnStyle}>Leave Group</button>}
+
+                        {/* <button  >Join Group</button> */}
                     </div>
                     <div className='mx-4 mb-2'>
                         <h2 style={{ fontSize: '22px', fontWeight: '700' }}>Computer Engineering</h2>

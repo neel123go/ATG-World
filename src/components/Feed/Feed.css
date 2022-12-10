@@ -28,3 +28,9 @@
 .dropdown-menu {
     margin-left: -135px !important;
 }
+
+@media only screen and (max-width: 992px) {
+    .dropdown-menu {
+        margin-left: 0px !important;
+    }
+}

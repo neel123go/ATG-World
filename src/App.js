@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <Header user={user} />
-      <Banner />
+      <Banner user={user} setUser={setUser} />
       <Feed user={user} setUser={setUser} />
     </>
   );
